@@ -14,6 +14,7 @@ m2g = function(mobius.mat){
                 stop("The input should be matrix")
         }
         data("graphTable")
+        graphTable = as.data.frame(t(graphTable))
         if(any(is.na(match(colnames(mobius.mat), graphTable$name)))){
                 stop("The column name should be from graphTable")
         }
