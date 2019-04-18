@@ -1,0 +1,26 @@
+---
+title: "subgraph"
+author: "Jackie Jiaqi Yin"
+date: "4/17/2019"
+output: 
+        github_document:
+                html_preview: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(eval = FALSE, message=FALSE, warning=FALSE, autodep=TRUE)
+```
+## Overview
+**subgraph** is a system for displaying graphs by showing the connected edges. Base on [the graph list](http://graphclasses.org/smallgraphs.html)
+
+
+## Installation
+```{r install}
+# install.packages("devtools")
+devtools::install_github("placeboo/subgraph")
+```
+
+## Useage
+```{r use}
+library(subgraph)
+```
