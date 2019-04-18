@@ -1,0 +1,37 @@
+---
+title: "subgraph"
+author: "Jackie Jiaqi Yin"
+date: "4/17/2019"
+output: 
+        github_document:
+                html_preview: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message=FALSE, warning=FALSE, autodep=TRUE)
+```
+## Overview
+**subgraph** is a system for displaying graphs by showing the connected edges. You prvide the name of nodes, and the name of graph which is based on [the graph list](http://graphclasses.org/smallgraphs.html). Then **subgraph** will provide you all homogenous graphs by showing the connected edges. The maximum number of nodes is 6.
+
+
+## Installation
+```{r install}
+# install.packages("devtools")
+devtools::install_github("placeboo/subgraph")
+install.packages("combinat", repos = "http://cran.us.r-project.org")
+```
+
+
+## Useage
+
+```{r use}
+library(subgraph)
+library(combinat)
+```
+If we want to display all the possible homogenous graphs for [claw](http://graphclasses.org/images/g_claw.gif), whose number of nodes is 4,
+```{r example}
+claw(c(1:4))
+```
+
+## More
+Check the help page. The package is incorporated with the working paper of mine.

@@ -1,4 +1,5 @@
 #' c4 graphs
+
 #' List all possible c4 graphs based on given FOUR nodes
 
 #' @param x The vector representing nodes
