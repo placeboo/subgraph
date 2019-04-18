@@ -5,6 +5,8 @@ Version: 0.1.0
 Author: Jiaqi Yin
 Maintainer: The package maintainer <jiaqiyin@uw.edu>
 Description: Based on given nodes, list all possible subgraphs and Mobius parameters
+Imports:
+        combinat
 License: UW Biostatistics
 Encoding: UTF-8
 LazyData: true
